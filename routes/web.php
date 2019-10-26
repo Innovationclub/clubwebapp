@@ -12,12 +12,15 @@
 */
 
 
+<<<<<<< HEAD
 
 Route::get('/', function () {
     return view('/home');
 });
 
 
+=======
+>>>>>>> 0392061c224028531dec46217cd55b92787243c3
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
