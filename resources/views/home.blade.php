@@ -1,4 +1,3 @@
-
 @extends('layouts.app')
 
 @section('content')
@@ -14,7 +13,6 @@
                             {{ session('status') }}
                         </div>
                     @endif
-                    {{ Auth::user()->email }}
                     You are logged in!
                 </div>
             </div>
