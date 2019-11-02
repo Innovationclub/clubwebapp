@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     NAN                                                                                                                                                                                                                                                                                                                                bbbbbbbbbbbbbb 
-=======
 @extends('layouts.app')
 
 @section('content')
@@ -24,4 +21,3 @@
 </div>
 @endsection
 
->>>>>>> e0d03c5eac5d8274e56bc6852f41c88599a4922e

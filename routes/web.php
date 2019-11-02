@@ -12,10 +12,6 @@
 */
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 4e956ff3373bc8bd466cbbbd1d991c759032ea5f
 Route::get('/', function () {
     return view('/home');
 });

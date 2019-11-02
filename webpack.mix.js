@@ -11,5 +11,7 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
+mix.js(['resources/js/breakpoints.min.js', 'resources/js/app.js', 'node_modules/util/util.js', 'resources/js/main.js'], 'public/js')
+	.copy('resources/css/main.css', 'public/css/app.css')
+	.copy('resources/css/noscript.css', 'public/css/noscript.css')
     .sass('resources/sass/app.scss', 'public/css');
