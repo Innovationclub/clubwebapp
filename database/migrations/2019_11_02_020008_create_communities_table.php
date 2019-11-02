@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddUserFields extends Migration
+class CreateCommunitiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -15,11 +15,9 @@ class AddUserFields extends Migration
     {
         Schema::create('communities', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->longtext('description');
+            $table->morphs('photoable');
+            $primaryKey=('id');
             $table->timestamps();
         });
     }
@@ -31,6 +29,6 @@ class AddUserFields extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('communities');        
+        Schema::dropIfExists('communities');
     }
 }
