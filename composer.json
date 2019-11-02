@@ -14,10 +14,14 @@
         "laravel/framework": "^6.0",
         "laravel/helpers": "^1.1",
         "laravel/tinker": "^1.0",
+<<<<<<< HEAD
+        "tcg/voyager": "^1.3"
+=======
         "laravelcollective/html": "^6.0",
         "marat555/eventbrite": "dev-master",
         "tcg/voyager": "^1.2",
         "voyager-polls": "^1.0"
+>>>>>>> 4e956ff3373bc8bd466cbbbd1d991c759032ea5f
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",
